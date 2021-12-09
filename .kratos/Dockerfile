@@ -5,7 +5,7 @@ RUN apk update && apk add bash
 COPY ./node_modules /code/node_modules
 
 # To make sure symlink paths are not broken
-COPY ./build /code/build
+COPY ./.next /code/.next
 
 COPY ./package.json /code
 
